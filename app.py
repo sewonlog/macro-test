@@ -6,6 +6,7 @@ from selenium import webdriver as wb
 
 # wb.Chrome()
 
+
 # 크롬드라이버 경로 설정
 service = Service('C:/Users/sewon/chromedriver-win64/chromedriver.exe')
 service.start()
@@ -14,11 +15,11 @@ service.start()
 driver = webdriver.Chrome(service=service)
 
 # 로그인 페이지로 이동
-login_url = "https://accounts.interpark.com/login/form"
+login_url = "https://tickets.interpark.com/"
 driver.get(login_url)
 
 # 페이지 로드 대기
-time.sleep(3)
+# time.sleep(7)
 
 # 브라우저 종료
-driver.quit()
+# driver.quit()
